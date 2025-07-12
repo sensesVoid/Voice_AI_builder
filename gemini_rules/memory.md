@@ -49,3 +49,4 @@
 - Removed embedded Git repository from `frontend` directory.
 - Added MIT License file.
 - Replaced "Play Audio" button with speaker icon button in `frontend/src/App.tsx` and added styling in `frontend/src/App.css`.
+- Committed changes to Git.

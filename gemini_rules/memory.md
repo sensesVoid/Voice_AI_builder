@@ -1,0 +1,47 @@
+# Memory Log
+
+- Initialized project and created tasklist.md, memory.md, and debug.md.
+- Set up frontend (React with TypeScript).
+- Set up backend (Node.js with Express).
+- Implemented Web Speech API for voice input in the frontend.
+- Implemented API endpoints for Gemini and OpenTTS in the backend.
+- Integrated Gemini API and OpenTTS with the backend.
+- Handled audio playback, displayed conversation history, and implemented loading states/error handling in the frontend.
+- Added API key configuration in the backend.
+- Created comprehensive README.md with setup and OpenTTS deployment instructions.
+- Modified backend to use the `gemini-1.5-flash-flash-latest` model.
+- Fixed OpenTTS URL configuration in `backend/.env` to `http://localhost:5002`.
+- Updated OpenTTS URL in `backend/.env` to `http://localhost:5500` after discovering OpenTTS runs on port 5500 inside the Docker container.
+- Changed OpenTTS voice parameter from `speaker` to `voice` in `backend/index.js`.
+- Attempted to change OpenTTS voice to `en-us-amy` in `backend/index.js`.
+- Removed `voice` parameter from OpenTTS request in `backend/index.js` to test default voice behavior.
+- Attempted to use `en-us-ljspeech` as the voice in `backend/index.js`.
+- Successfully identified and used `coqui-tts:en_ljspeech` as the voice in `backend/index.js`.
+- Added logging for OpenTTS request in `backend/index.js`.
+- Changed OpenTTS request to GET with query parameters in `backend/index.js`.
+- Reverted OpenTTS request to POST with `application/json` content type in `backend/index.js`.
+- Performed clean restart of OpenTTS Docker container.
+- Updated OpenTTS endpoint with new default voice and error handling in `backend/index.js`.
+- Added `/voices` endpoint to fetch available OpenTTS voices in `backend/index.js`.
+- Implemented standard recording button in `frontend/src/App.tsx` and `frontend/src/App.css`.
+- Reverted streaming implementation and bot name change in `backend/index.js` and `frontend/src/App.tsx`.
+- Retained Ghislaine name and automatic audio playback in `frontend/src/App.tsx`.
+- Corrected `frontend/src/App.tsx` structure.
+- Reverted `backend/index.js` to last known working state for OpenTTS.
+- Reverted streaming implementation (backend and frontend) to restore previous functionality.
+- Implemented robust OpenTTS voice handling with multiple payload formats and fallback logic in `backend/index.js`.
+- Fixed `/test-opentts` endpoint routing in `backend/index.js`.
+- Persistent "AssertionError: No voice provided" from OpenTTS. Requires external investigation of OpenTTS setup or alternative TTS solution.
+- Installed `microsoft-cognitiveservices-speech-sdk` in the backend.
+- Added Azure Speech Key and Region to `backend/.env`.
+- Replaced OpenTTS logic with Azure Neural TTS in `backend/index.js`.
+- Updated `README.md` with Azure Cognitive Services setup instructions.
+- Removed `axios` dependency from `backend/package.json`.
+- Updated `frontend/src/App.tsx` to use Azure-compatible speech synthesis endpoint.
+- Reverted `package.json` changes (removed Azure SDK, added `axios`).
+- Updated `.env` with Eleven Labs API key and voice ID placeholders.
+- Updated `backend/index.js` to use Eleven Labs API.
+- Updated `README.md` with Eleven Labs setup instructions.
+- Updated `frontend/src/App.tsx` to use Eleven Labs-compatible speech synthesis endpoint.
+- Fixed ESLint warning in `frontend/src/App.tsx` by adding `sendToBackend` to `useEffect` dependency array.
+- Updated `backend/.env` with a common free-tier Eleven Labs voice ID.

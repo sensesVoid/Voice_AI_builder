@@ -1,0 +1,50 @@
+# Task List for Conversational AI Builder
+
+- [x] Initialize project structure (frontend, backend directories)
+- [x] Create `gemini_rules/memory.md`
+- [x] Create `gemini_rules/debug.md`
+- [x] Set up frontend (React with TypeScript)
+- [x] Set up backend (Node.js with Express)
+- [x] Implement Web Speech API for voice input (frontend)
+- [x] Implement API endpoint for Gemini interaction (backend)
+- [x] Implement API endpoint for OpenTTS interaction (backend)
+- [x] Integrate Gemini API with backend
+- [x] Integrate OpenTTS with backend
+- [x] Handle audio playback in frontend
+- [x] Display conversation history in frontend
+- [x] Implement loading states and error handling
+- [x] Add configuration for API keys
+- [x] Create README.md with setup instructions
+- [x] Add OpenTTS deployment instructions to README.md
+- [x] Dynamically select Gemini model based on availability
+- [x] Use gemini-1.5-flash-latest model
+- [x] Fixed OpenTTS URL configuration
+- [x] Updated OpenTTS URL to reflect internal container port (5500)
+- [x] Changed OpenTTS voice parameter from `speaker` to `voice`
+- [x] Changed OpenTTS voice to `en-us-amy`
+- [x] Removed `voice` parameter from OpenTTS request to use default voice
+- [x] Attempted to use `en-us-ljspeech` as the voice
+- [x] Used `coqui-tts:en_ljspeech` as the voice
+- [x] Added logging for OpenTTS request in `backend/index.js`.
+- [x] Changed OpenTTS request to GET with query parameters
+- [x] Reverted OpenTTS request to POST with `application/json` content type
+- [x] Performed clean restart of OpenTTS Docker container.
+- [x] Updated OpenTTS endpoint with new default voice and error handling.
+- [x] Added `/voices` endpoint to fetch available OpenTTS voices.
+- [x] Implemented standard recording button.
+- [x] Changed bot name to Ghislaine and implemented automatic audio playback.
+- [x] Fixed TypeScript error for Ghislaine type.
+- [x] Updated backend dependencies to latest versions.
+- [x] Reverted streaming implementation (backend and frontend) to restore previous functionality.
+- [x] Implemented robust OpenTTS voice handling with multiple payload formats and fallback logic.
+- [x] Fixed `/test-opentts` endpoint routing in `backend/index.js`.
+- [x] Resolve persistent "AssertionError: No voice provided" from OpenTTS (requires external investigation of OpenTTS setup).
+- [x] Replace OpenTTS with Azure Cognitive Services Neural TTS in backend.
+- [x] Update `README.md` with Azure Cognitive Services setup instructions.
+- [x] Remove OpenTTS related code from backend.
+- [x] Update frontend to use Azure-compatible speech synthesis endpoint.
+- [x] Replace Azure Cognitive Services Neural TTS with Eleven Labs in backend.
+- [x] Update `README.md` with Eleven Labs setup instructions.
+- [x] Remove Azure-related code from backend.
+- [x] Fix ESLint warning in `frontend/src/App.tsx`.
+- [x] Update `backend/.env` with a common free-tier Eleven Labs voice ID.

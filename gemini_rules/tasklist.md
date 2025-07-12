@@ -48,3 +48,4 @@
 - [x] Remove Azure-related code from backend.
 - [x] Fix ESLint warning in `frontend/src/App.tsx`.
 - [x] Update `backend/.env` with a common free-tier Eleven Labs voice ID.
+- [x] Replace play audio button with speaker icon button.

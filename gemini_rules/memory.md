@@ -45,3 +45,7 @@
 - Updated `frontend/src/App.tsx` to use Eleven Labs-compatible speech synthesis endpoint.
 - Fixed ESLint warning in `frontend/src/App.tsx` by adding `sendToBackend` to `useEffect` dependency array.
 - Updated `backend/.env` with a common free-tier Eleven Labs voice ID.
+- Initialized Git repository.
+- Removed embedded Git repository from `frontend` directory.
+- Added MIT License file.
+- Replaced "Play Audio" button with speaker icon button in `frontend/src/App.tsx` and added styling in `frontend/src/App.css`.
